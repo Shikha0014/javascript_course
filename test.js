@@ -1,4 +1,4 @@
-/*console.log('dev');
+console.log('dev');
 let country1 = "India"
 let continent = "Asia"
 let populationI = 10
@@ -147,7 +147,7 @@ console.log(Toper);
 const bill = 375;
 const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.02;
 const total = bill + tip;
-console.log(`the bill was ${bill} , the tip was ${tip} , and the total value is ${total}`); */
+console.log(`the bill was ${bill} , the tip was ${tip} , and the total value is ${total}`); 
 
 
 function logger(){
@@ -202,4 +202,21 @@ const describePopulation = function (country,population){
 }
 console.log(describePopulation('India',1678));
 console.log(describePopulation('USA', 332));
+
+// coding challenge #1
+ const calcAverage = (score1 , score2 , score3 )=> (score1 + score2 + score3)/3;
+ const dolphinsScoreAvg = calcAverage(85, 54 ,41);
+ const koalasScoreAvg = calcAverage(23, 34, 27);
+ console.log(koalasScoreAvg,dolphinsScoreAvg);
+ 
+ function checkWinner (koalasScoreAvg,dolphinsScoreAvg){
+    if (koalasScoreAvg >= dolphinsScoreAvg * 2){
+        console.log(`Koalas win ${koalasScoreAvg} vs. ${dolphinsScoreAvg})`);
+    }else if (dolphinsScoreAvg >= koalasScoreAvg *2){
+        console.log(`Dolphins win ${dolphinsScoreAvg} vs. ${koalasScoreAvg}`);
+    }else {
+        console.log("no team wins");
+    }
+ }
+ checkWinner(koalasScoreAvg,dolphinsScoreAvg);
 
